@@ -28,8 +28,6 @@ namespace bustub {
  * BufferPoolManager reads disk pages to and from its internal buffer pool.
  */
 class BufferPoolManagerInstance : public BufferPoolManager {
-  friend class ParallelBufferPoolManager;
-
  public:
   /**
    * Creates a new BufferPoolManagerInstance.

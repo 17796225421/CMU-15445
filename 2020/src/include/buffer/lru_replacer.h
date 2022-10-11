@@ -47,10 +47,10 @@ class LRUReplacer : public Replacer {
   size_t Size() override;
 
  private:
-  int max_pages_num_;
-  std::list<frame_id_t> list_;
-  std::unordered_map<frame_id_t, std::list<frame_id_t>::iterator> map_;
-  std::mutex mtx_;
+  // TODO(student): implement me!
+  std::list<frame_id_t> lru_list_;
+  std::unordered_map<frame_id_t, std::list<frame_id_t>::iterator> lru_map_;
+  std::mutex lru_latch_;
 };
 
 }  // namespace bustub
